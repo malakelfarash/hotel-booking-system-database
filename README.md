@@ -29,6 +29,43 @@ A complete relational database system designed for hotel booking management. Thi
 - **Language (Frontend):** HTML, CSS, JavaScript
 - **Tools:** phpMyAdmin, MySQL Workbench (optional)
 
+## Getting Started
+
+### Prerequisites
+
+- XAMPP, WAMP, or MAMP installed (for Apache + MySQL + PHP).
+- A web browser.
+- phpMyAdmin (comes with XAMPP).
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/YourUsername/hotel-booking-system-database.git
+   ```
+
+2. **Import the Database:**
+   - Open phpMyAdmin (`http://localhost/phpmyadmin`).
+   - Create a new database named `hotel_system`.
+   - Click **Import** and upload `hotel_booking_system.sql`.
+   - Click **Go** to execute the script.
+
+3. **Set Up the Web Interface:**
+   - Copy the `booking.php`, `script.js`, and `style.css` files into your web server's root directory (e.g., `C:\xampp\htdocs\hotel_booking`).
+   - Update the database connection settings in `booking.php` if needed:
+
+     ```php
+     $host = 'localhost:3307';  // Adjust port if needed
+     $user = 'root';
+     $pass = '';
+     $db = 'hotel_system';
+     ```
+
+4. **Run the Application:**
+   - Open your browser and navigate to `http://localhost/hotel_booking/booking.php`.
+   - Fill in the form and click **Book Now** to test the system.
+
 ## How It Works
 
 ### Database Schema Overview
@@ -83,40 +120,3 @@ Three triggers are implemented for data integrity:
 - **No User Authentication:** The web interface does not include login or authentication. Any user can make a booking.
 - **Basic UI:** The web form is functional but minimal. A production system would require more robust error handling, input sanitization, and user feedback.
 - **No Cancellation Feature:** The web interface only supports creating bookings, not viewing or cancelling them.
-
-## Getting Started
-
-### Prerequisites
-
-- XAMPP, WAMP, or MAMP installed (for Apache + MySQL + PHP).
-- A web browser.
-- phpMyAdmin (comes with XAMPP).
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/YourUsername/hotel-booking-system-database.git
-   ```
-
-2. **Import the Database:**
-   - Open phpMyAdmin (`http://localhost/phpmyadmin`).
-   - Create a new database named `hotel_system`.
-   - Click **Import** and upload `hotel_booking_system.sql`.
-   - Click **Go** to execute the script.
-
-3. **Set Up the Web Interface:**
-   - Copy the `booking.php`, `script.js`, and `style.css` files into your web server's root directory (e.g., `C:\xampp\htdocs\hotel_booking`).
-   - Update the database connection settings in `booking.php` if needed:
-
-     ```php
-     $host = 'localhost:3307';  // Adjust port if needed
-     $user = 'root';
-     $pass = '';
-     $db = 'hotel_system';
-     ```
-
-4. **Run the Application:**
-   - Open your browser and navigate to `http://localhost/hotel_booking/booking.php`.
-   - Fill in the form and click **Book Now** to test the system.
