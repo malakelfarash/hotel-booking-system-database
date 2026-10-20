@@ -11,21 +11,16 @@
 | Guest_id | INT | FK, NOT NULL | Id of the guest making the booking | 1 |
 | Staff_id | INT | FK, NULL | The staff who reserved the booking | 1 |
 
-## Booking Room
+## Guest
 
 | Data type | Constraints | Description | Example |
 |-----------|-------------|-------------|---------|
-| Booking_id | INT | CPK, FK | Links to the booking table | 1 |
-| Room_id | INT | CPK, FK | Links to the room table | 1 |
-
-## Room
-
-| Data type | Constraints | Description | Example |
-|-----------|-------------|-------------|---------|
-| Room_id | INT | PK | Id for each room | 1 |
-| Floor_no | INT (10) | NOT NULL | Floor number in which the room exists | 3 (floor number 3) |
-| Is_booked | TINYINT (1) | NOT NULL | Is the room booked or not? | 1 (means booked) |
-| Type_id | INT | FK, NOT NULL | Links to room type table | 1 |
+| Guest_id | INT | PK | Id for the guest | 1 |
+| First_name | VARCHAR (50) | NOT NULL | Guest's first name | Ahmed |
+| Last_name | VARCHAR (50) | NOT NULL | Guest's last name | Hazem |
+| Gender | VARCHAR (10) | NOT NULL | Guest's gender | Male |
+| Email | VARCHAR (50) | NOT NULL | Guest's Email address | ahmedd@gmail.com |
+| PHONE_NO | VARCHAR (20) | NULL | Guest phone number | +201125252525 |
 
 ## Staff
 
@@ -39,17 +34,6 @@
 | Phone_no | VARCHAR (20) | NULL | Employee's contact number. | +201125252525 |
 | Manager_id | INT | FK, NULL | Id for the person who manages other employees | 2 |
 
-## Guest
-
-| Data type | Constraints | Description | Example |
-|-----------|-------------|-------------|---------|
-| Guest_id | INT | PK | Id for the guest | 1 |
-| First_name | VARCHAR (50) | NOT NULL | Guest's first name | Ahmed |
-| Last_name | VARCHAR (50) | NOT NULL | Guest's last name | Hazem |
-| Gender | VARCHAR (10) | NOT NULL | Guest's gender | Male |
-| Email | VARCHAR (50) | NOT NULL | Guest's Email address | ahmedd@gmail.com |
-| PHONE_NO | VARCHAR (20) | NULL | Guest phone number | +201125252525 |
-
 ## Payment
 
 | Data type | Constraints | Description | Example |
@@ -59,6 +43,15 @@
 | Booking_id | INT | FK, NOT NULL | Id for each booking | 1 |
 | Method name | VARCHAR (20) | NOT NULL | The name of each method | Cash, Credit, Instapay |
 
+## Room
+
+| Data type | Constraints | Description | Example |
+|-----------|-------------|-------------|---------|
+| Room_id | INT | PK | Id for each room | 1 |
+| Floor_no | INT (10) | NOT NULL | Floor number in which the room exists | 3 (floor number 3) |
+| Is_booked | TINYINT (1) | NOT NULL | Is the room booked or not? | 1 (means booked) |
+| Type_id | INT | FK, NOT NULL | Links to room type table | 1 |
+
 ## Room Type
 
 | Data type | Constraints | Description | Example |
@@ -67,3 +60,10 @@
 | Type_name | VARCHAR (15) | NOT NULL | The name of each room type | Single, double, grand, suite |
 | Price | DECIMAL (10) | NOT NULL | The price of each type | 300.00 |
 | capacity | INT | NOT NULL | The maximum capacity of each room | 3 |
+
+## Booking Room
+
+| Data type | Constraints | Description | Example |
+|-----------|-------------|-------------|---------|
+| Booking_id | INT | CPK, FK | Links to the booking table | 1 |
+| Room_id | INT | CPK, FK | Links to the room table | 1 |
