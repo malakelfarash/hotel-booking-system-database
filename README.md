@@ -11,8 +11,8 @@ A complete relational database system designed for hotel booking management. Thi
 ![Relational Schema](schema.png)
 
 *Booking Form Web Interface*
-![Booking GUI](GUI1.png)
-![Booking GUI](GUI2.png)
+![Booking GUI 1](GUI1.png)
+![Booking GUI 2](GUI2.png)
 
 ## Features
 
