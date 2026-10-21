@@ -5,14 +5,14 @@ A complete relational database system designed for hotel booking management. Thi
 ## Demo
 
 *Entity Relationship Diagram (ERD)*
-![ER Diagram](erd.png)
+![ER Diagram](images/erd.png)
 
 *Relational Schema*
-![Relational Schema](schema.png)
+![Relational Schema](images/schema.png)
 
 *Booking Form Web Interface*
-![Booking GUI 1](GUI1.png)
-![Booking GUI 2](GUI2.png)
+![Booking GUI 1](images/GUI1.png)
+![Booking GUI 2](images/GUI2.png)
 
 ## Features
 
