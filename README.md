@@ -54,6 +54,8 @@ A complete relational database system designed for hotel booking management. Thi
    - Click **Import** and upload `hotel_booking_system.sql`.
    - Click **Go** to execute the script.
 
+> The DDL and DML statements used in `hotel_booking_system.sql` are also documented in [sql_implementation_report.pdf](sql_implementation_report.pdf).
+
 3. **Set Up the Web Interface:**
    - Copy the `booking.php`, `script.js`, and `style.css` files into your web server's root directory (e.g., `C:\xampp\htdocs\hotel_booking`).
    - Update the database connection settings in `booking.php` if needed:
@@ -108,6 +110,8 @@ The database consists of **7 tables**:
 8. Calculate stay duration for each guest (DATEDIFF).
 9. Retrieve staff with a high number of bookings (GROUP BY + HAVING).
 10. Create and query a financial reporting view (CREATE VIEW).
+
+> The output of each query and a step-by-step explanation of how it executes are in [sql_implementation_report.pdf](sql_implementation_report.pdf).
 
 ### Triggers
 
