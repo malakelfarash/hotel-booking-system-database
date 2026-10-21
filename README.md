@@ -1,6 +1,6 @@
 # Hotel Booking System Database
 
-A complete relational database system designed for hotel booking management. This project covers the full database development lifecycle: requirements analysis, ER diagram design, relational schema mapping, SQL DDL/DML implementation, 10+ analytical queries, and a PHP/MySQL web interface for real-time room reservations.
+A complete relational database system designed for hotel booking management. This project covers the full database development lifecycle: requirements analysis, ER diagram design, relational schema mapping, SQL DDL/DML implementation, 10 analytical queries, and a PHP/MySQL web interface for real-time room reservations.
 
 ## Demo
 
